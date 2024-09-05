@@ -1,0 +1,74 @@
+:root {
+  --gap: 10px;
+  --radius: 0;
+}
+body {
+  font-family: "quicksand";
+
+  height: 100vh;
+}
+.box {
+  margin-top: var(--gap);
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: var(--radius);
+  box-shadow: 2px 2px;
+}
+.container {
+  gap: var(--gap);
+  width: 100%;
+}
+main {
+  gap: var(--gap);
+}
+.card {
+  .image {
+    border-radius: var(--radius);
+    border: 1px solid black;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://placehold.co/1x1);
+  }
+}
+header {
+  height: 10%;
+  padding: 0 2% !important;
+  ul {
+    gap: 20px;
+  }
+}
+footer {
+  padding: 20px !important;
+}
+ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding-left: 0;
+}
+ol {
+  padding-left: 0;
+  list-style-position: inside;
+}
+.right {
+  width: 20%;
+}
+.left {
+  width: 20%;
+  
+  gap: var(--gap);
+  span {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    border-radius: var(--radius);
+    height: fit-content;
+    padding: 10px;
+    border: 1px solid black;
+  }
+}
+footer {
+  height: 10%;
+}
